@@ -30,7 +30,12 @@ class Delivery
      * @var \Interfax\Client
      */
     private $client;
-
+	
+	/**
+	 * @var GenericFactory|null
+	 */
+	private $factory;
+	
     /**
      * Delivery constructor.
      *
