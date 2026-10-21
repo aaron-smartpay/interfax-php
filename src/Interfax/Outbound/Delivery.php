@@ -44,7 +44,7 @@ class Delivery
      * @param GenericFactory $factory
      * @throws \InvalidArgumentException
      */
-    public function __construct(Client $client, $params = [], GenericFactory $factory = null)
+    public function __construct(Client $client, $params = [], ?GenericFactory $factory = null)
     {
         $this->client = $client;
 

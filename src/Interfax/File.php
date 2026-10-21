@@ -40,7 +40,7 @@ class File
      * @param array $params
      * @throws \InvalidArgumentException
      */
-    public function __construct(Client $client, $location, $params = [], GenericFactory $factory = null)
+    public function __construct(Client $client, $location, $params = [], ?GenericFactory $factory = null)
     {
         $this->client = $client;
         if ($factory === null) {

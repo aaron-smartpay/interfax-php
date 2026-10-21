@@ -38,8 +38,8 @@ class RequestException extends \RuntimeException
         $message,
         $code,
         $http_status,
-        GuzzleException $request_exception = null,
-        \Exception $previous = null
+        ?GuzzleException $request_exception = null,
+        ?\Exception $previous = null
     ) {
         $this->http_status = $http_status;
         $this->request_exception = $request_exception;

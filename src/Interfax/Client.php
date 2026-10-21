@@ -68,7 +68,7 @@ class Client
      * @param GenericFactory|null $factory - allows for testing injection with abstract class instantiation
      * @throws \InvalidArgumentException
      */
-    public function __construct($params = [], GenericFactory $factory = null)
+    public function __construct($params = [], ?GenericFactory $factory = null)
     {
         if ($params === null || !is_array($params)) {
             throw new \InvalidArgumentException('array of parameters expected to instantiate ' . __CLASS__);

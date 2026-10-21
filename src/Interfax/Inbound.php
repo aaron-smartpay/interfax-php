@@ -34,7 +34,7 @@ class Inbound
      * @param Client $client
      * @param GenericFactory|null $factory
      */
-    public function __construct(Client $client, GenericFactory $factory = null)
+    public function __construct(Client $client, ?GenericFactory $factory = null)
     {
         $this->client = $client;
         if ($factory === null) {

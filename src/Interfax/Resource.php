@@ -62,7 +62,7 @@ abstract class Resource
      * @param array $definition
      * @param GenericFactory|null $factory
      */
-    public function __construct(Client $client, $id, $definition = [], GenericFactory $factory = null)
+    public function __construct(Client $client, $id, $definition = [], ?GenericFactory $factory = null)
     {
         $this->client = $client;
 
